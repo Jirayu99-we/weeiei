@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #000;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  
+  .menu li a.active {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .search-box {
+    position: relative;
+  }
+  
+  .search-box input {
+    padding: 8px 35px 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Card Section */
+  .card-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    background-color: #f44336;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-label {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 2px solid white;
+    padding-top: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .intro h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 14px;
+    line-height: 1.8;
+    text-transform: uppercase;
+  }
+  
+  /* Optional: background dots effect */
+  body::before, body::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #ff5f5f, transparent);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  body::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  body::after {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);}
